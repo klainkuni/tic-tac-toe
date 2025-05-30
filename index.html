@@ -10,7 +10,7 @@
     <h1>Tic-Tac-Toe vs AI</h1>
 
     <!-- Background selector -->
-    <label for="background-select">Choose Background:</label>
+    <label for="background-select">Background:</label>
     <select id="background-select">
       <option value="default">Default Image</option>
       <option value="light">Light Gray</option>
@@ -25,11 +25,35 @@
       <option value="hard" selected>Hard</option>
     </select>
 
+    <!-- Field size selector -->
+    <label for="field-size-select">Field Size:</label>
+    <select id="field-size-select">
+      <option value="3">3x3</option>
+      <option value="4">4x4</option>
+      <option value="5">5x5</option>
+    </select>
+
     <div id="game-board"></div>
     <button onclick="resetGame()" id="restart-button">Restart Game</button>
     <p id="status">Your turn (X)</p>
     <div id="win-message" class="hidden">AI won!</div>
+
+    <!-- Statistics -->
+    <div id="stats">
+      <p>Player Wins: <span id="player-wins">0</span></p>
+      <p>AI Wins: <span id="ai-wins">0</span></p>
+      <p>Draws: <span id="draws">0</span></p>
+    </div>
+
+    <!-- Sound toggle -->
+    <label for="sound-toggle">Sound On/Off:</label>
+    <input type="checkbox" id="sound-toggle" checked />
+
   </div>
+
+  <audio id="move-sound" src="https://www.soundjay.com/button/sounds/button-27.mp3"></audio> 
+  <audio id="win-sound" src="https://www.soundjay.com/human/sounds/applause-1.mp3"></audio> 
+  <audio id="draw-sound" src="https://www.soundjay.com/human/sounds/tada-1.mp3"></audio> 
 
   <script src="script.js"></script>
 </body>
