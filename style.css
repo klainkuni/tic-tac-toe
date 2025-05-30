@@ -1,0 +1,94 @@
+/* style.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  font-size: 48px;
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+  border: 2px solid #333;
+  transition: all 0.3s ease;
+}
+
+.cell:hover {
+  background-color: #f0f0f0;
+}
+
+#restart-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+#restart-button:hover {
+  background-color: #45a049;
+}
+
+#status {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+#win-message {
+  margin-top: 20px;
+  font-size: 24px;
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
+/* Select boxes */
+select {
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+#status {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+#win-message {
+  margin-top: 20px;
+  font-size: 24px;
+  color: red;
+  font-weight: bold;
+  display: none;
+}
