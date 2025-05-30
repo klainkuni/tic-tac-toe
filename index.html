@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tic-Tac-Toe vs AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Tic-Tac-Toe vs AI</h1>
+
+    <!-- Background selector -->
+    <label for="background-select">Choose Background:</label>
+    <select id="background-select">
+      <option value="default">Default Image</option>
+      <option value="light">Light Gray</option>
+      <option value="dark">Dark Blue</option>
+      <option value="green">Green</option>
+    </select>
+
+    <!-- Difficulty selector -->
+    <label for="difficulty-select">Difficulty:</label>
+    <select id="difficulty-select">
+      <option value="easy">Easy</option>
+      <option value="hard" selected>Hard</option>
+    </select>
+
+    <div id="game-board"></div>
+    <button onclick="resetGame()" id="restart-button">Restart Game</button>
+    <p id="status">Your turn (X)</p>
+    <div id="win-message" class="hidden">AI won!</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
