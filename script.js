@@ -53,8 +53,10 @@ setBackground();
 
 function playSound(sound) {
   if (soundToggle.checked) {
-    sound.currentTime = 0;
-    sound.play();
+    setTimeout(() => {
+      sound.currentTime = 0;
+      sound.play().catch(() => {});
+    }, 100); // Delay to let browser load audio
   }
 }
 
